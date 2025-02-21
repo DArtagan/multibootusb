@@ -24,3 +24,28 @@ Visit the [project's website for more information][website].
 [grub]: https://www.gnu.org/software/grub/
 [isos]: https://mbusb.aguslr.com/isos.html
 [website]: https://mbusb.aguslr.com/
+
+## Dependencies
+
+- coreutils
+- gptfdisk
+- curl
+- gnutar
+- unzip
+- grub2
+- gnused
+- exfatprogs: for exfat
+
+## Example directory structure
+
+```bash
+eza --tree $data_mnt
+$data_mnt
+└── boot
+    ├── autoexec.ipxe
+    ├── grub
+    └── isos
+        ├── artix-xfce-runit-20240823-x86_64.iso
+        ├── hirens
+        └── ipxe.efi
+```
