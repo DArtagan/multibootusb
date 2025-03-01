@@ -122,11 +122,7 @@ if [ ! "$usb_dev" ]; then
 fi
 
 # Check for GRUB installation binary
-if [ -n "${GRUB_EFI}" ]; then
-	grubefi="$GRUB_EFI"
-else
-	grubefi=$(command -v grub-install || command -v grub2-install) || cleanUp 3
-fi
+grubefi=$(command -v grub-install || command -v grub2-install) || cleanUp 3
 
 # Unmount device
 unmountUSB "$usb_dev"
