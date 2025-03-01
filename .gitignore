@@ -1,5 +1,6 @@
 *.local
 *.log
+autoexec.ipxe
 grub.cfg
 /fonts
 /i386-pc
@@ -13,3 +14,4 @@ grub.cfg
 /docs/.sass-cache
 /docs/.jekyll-metadata
 /isos
+/tools
